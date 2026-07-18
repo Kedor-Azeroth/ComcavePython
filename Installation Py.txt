@@ -1,0 +1,72 @@
+1 Seite PATH an klicken dann
+2.Seite alle vordefinierten lassen 
+3.Seite so lassen
+install 
+Dispath drücke > Ja
+
+Python Schreiben:
+
+REPL :Read
+      Eval
+      Print
+      Loop
+7+7
+29/7  = 4,14
+29// =  4   // Komma wird gestrichen
+(1/3)*3
+(2+3)*3
+2+3*3
+2%3  // 'Modulo' Rest bleibt übrig !!! und wird auch nur ausgegeben 
+2 ** 3  // entspricht 2hoch 3
+Datentypen:
+
+zuweisungsoperator =
+
+x = 10 // Leerzeichen zur Übersichtlichkeit
+Aufruf mit x  // Case sensitiv!!! Und Duck-Typing Datentypen müssen nicht expilzit angegeben werden
+
+Exit()
+help()
+-------------
+x = 20
+id(x)
+11760392
+>>>id(20)
+11760392
+>>>y = 30
+>>>y
+30
+>>> x = y
+>>>y
+30
+>>>y = y +10
+>>> y
+40
+x = x + y 
+>>> x
+>>> 70
+
+del y löscht speicher
+
+dir ()zeigt was existiert in der laufzeit 
+
+type(x)  welcher Datentyp wird genutzt
+
+
+x = "abc" string
+x = ''  = string
+
+x = 1.2535
+type(x)
+>>> float
+
+x = True
+X = False
+type (x)
+
+Zahl muss an mindestenz 2 stelle stehen 
+>>>ab1
+
+Schaue bei W3 School
+
+
