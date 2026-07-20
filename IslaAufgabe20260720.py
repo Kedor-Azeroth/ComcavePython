@@ -138,12 +138,12 @@ print('Die Gesamtkosten belaufen sich auf: ', gesamt_kosten)
 
 
 
-
-
-
-
-
 '''Aufgabe Aufgabe 5: Handwerker - Farbbedarf
+
+
+
+
+
 Szenario: Ein Maler berechnet, wie viel Farbe für eine Wand benötigt wird.
 Eingabe:
 • Wandhöhe in Metern (z.B. 2.5)
