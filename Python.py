@@ -68,4 +68,7 @@ Es könnte auch eine To-Do Liste
 #x = fruits.count("cherry")
 #print(x)
 #'Apple' .count ('p')  #Zählt die Anzahl der Buchstaben p in dem Wort Apple
-
+# string * 3 bedeutet, dass der String 3 mal wiederholt wird
+# print("Hello" * 3)
+# a = int('3') *3 string wird in int umgewandelt und mit 3 multipliziert
+#  

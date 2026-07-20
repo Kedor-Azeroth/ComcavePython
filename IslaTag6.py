@@ -37,6 +37,12 @@ anz_unentschieden = int(input('Anzahl der Unentschieden: '))
 anz_niederlagen = int(input('Anzahl der Niederlagen: '))
 
 #Verarbeitung der Werte
+#|| Umwandlung in eine Funktion
+#anz_siege = int(anz_siege)
+#anz_unentschieden = int(anz_unentschieden)
+#anz_niederlagen = int(anz_niederlagen)
+#
+
 gesamt_punkte = anz_siege * 3 + anz_unentschieden * 1 + anz_niederlagen * 0
 absolvierte_begegnungen = anz_siege +anz_unentschieden + anz_niederlagen    
 
