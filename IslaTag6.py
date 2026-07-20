@@ -35,7 +35,7 @@ print(Mexiko.count('Mexiko'))  # Ausgabe: 1
 ''' 
 #Eingabe der Werte
 
-mannschaftsname = input('Mannschaftsname : ')
+mannschaftsname = input('Mannschaftsname : ') # 
 anz_siege = int(input('Anzahl der Siege : '))
 anz_unentschieden = int(input('Anzahl der Unentschieden : '))
 anz_niederlagen = int(input('Anzahl der Niederlagen : '))
@@ -47,11 +47,11 @@ anz_niederlagen = int(input('Anzahl der Niederlagen : '))
 #anz_niederlagen = int(anz_niederlagen)
 #
 
-gesamt_punkte = anz_siege * 3 + anz_unentschieden * 1 + anz_niederlagen * 0
+erreichte_punktezahl = anz_siege * 3 + anz_unentschieden * 1 (+ anz_niederlagen * 0)  # wird nicht in diesem Fall benötigt.
 absolvierte_begegnungen = anz_siege +anz_unentschieden + anz_niederlagen    
 
 #Ausgabe der Werte
-print('Die ' ,mannschaftsname, ' hat',gesamt_punkte,'Punkte erreicht.')
+print('Die ' ,mannschaftsname, ' hat',erreichte_punktezahl,'Punkte erreicht.')
 # oder print('Deine Mannschaft ', mannschaft ,'hat folgedes erreicht:' )
 print('Die ' , mannschaftsname,  ' hat',absolvierte_begegnungen,'Begegnungen absolviert.')
 # || print('- Erreichte Puhkte :' gesamt_punkte)
