@@ -107,13 +107,39 @@ print('Durchschnitts Preis pro Frucht: ', durchschnitt_frucht, ' Euro.')
 • Anzahl Erwachsene (320 €/Person)
 • Anzahl Kinder (180 €/Person)
 • Anzahl Babys (0 €/Person, aber 25 € Gebühr pro Baby)
+
 Verarbeitung:
 • Berechne Gesamtpreis für Erwachsene, Kinder, Babys
 • Berechne Gesamtzahl der Passagiere
 • Berechne Gesamtkosten
+
 Ausgabe:
 • Gesamtzahl Passagiere
 • Gesamtkosten in Euro                 '''
+
+#Eingabe
+erwachsene = int(input('Anzahl Erwachsener : '))
+kinder = int(input('Anzahl Kinder : '))
+babys = int(input('Anzahl Babys : '))
+
+#Berechnungen
+gesamt_preis_erwachsene = erwachsene *320
+gesamt_preis_kinder = kinder *180
+gesamt_preis_babys = babys * 25
+
+gesamt_zahl_passagiere = erwachsene + kinder + babys
+
+gesamt_kosten = gesamt_preis_erwachsene + gesamt_preis_kinder + gesamt_preis_babys
+
+
+print('Die Gesamte Anzahl der Passagiere: ', gesamt_zahl_passagiere)
+print('Die Gesamtkosten belaufen sich auf: ', gesamt_kosten)
+
+
+
+
+
+
 
 
 
