@@ -157,4 +157,14 @@ Verarbeitung:
 Ausgabe:
 • Gesamtfläche in Quadratmetern
 • Benötigte Farbe in Litern                '''
-
+#Eingabe 
+wand_hoehe = float(input('Wandhöhe in Metern : '))
+wand_breite = float(input('Wandbreite in Metern  : '))
+anz_wand = int(input('Anzahl der Wände : '))
+#Verarbeitung
+wandflaeche = wand_hoehe * wand_breite
+wandflaeche_gesamt = wandflaeche * anz_wand
+farbemenge = round (wandflaeche_gesamt * 0.15, 1)
+#Ausgabe
+print('Die Gesamtfläche in Qudratmeter lautet : ',wandflaeche_gesamt,)
+print('Benötigte Farbe in Liter : ' ,farbemenge)
