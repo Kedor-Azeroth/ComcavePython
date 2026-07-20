@@ -30,6 +30,10 @@ fruits = ['apple', 'banana', 'cherry', 'date', 'cherry']
 x = fruits.count("cherry")
 print(x)
 
+'Apple' .count ('p')  #Zählt die Anzahl der Buchstaben p in dem Wort Apple
+
+
+
 fruits = ["apple", "banana", "cherry"] 
 x = len(fruits) 
 print(x)

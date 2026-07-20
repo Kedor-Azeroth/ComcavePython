@@ -64,6 +64,8 @@ Es könnte auch eine To-Do Liste
 #print(z)
 #a1 = 5 #Varibale dürfen nicht mit Zahlen beginnen, daher ist a1 korrekt
 #1 = 5 #Fehlerhafte Variable, Variablen dürfen nicht mit Zahlen beginnen'''
-
-
+#fruits = ['apple', 'banana', 'cherry', 'date', 'cherry']
+#x = fruits.count("cherry")
+#print(x)
+#'Apple' .count ('p')  #Zählt die Anzahl der Buchstaben p in dem Wort Apple
 
