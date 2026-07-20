@@ -16,23 +16,25 @@ print(Mexiko.count('Mexiko'))  # Ausgabe: 1
 # N -> Anzahl der Niederlagen (N = 0 Punkte)
 #
 ''' EVA-Prinzip:
- Eingabe:
+   Eingabe:
+
 1) Anzahl der Siege (S)
 2) Anzahl der Unentschieden (U)
 3) Anzahl der Niederlagen (N)
 4) Mannschaftsname (M) optional
  
- Verarbeitung:
+   Verarbeitung:
 1) Berechnung der Punktezahl  (Pkt = S*3 + U*1 + N*0)
 2) Berechnung der absolvierten Begegnungen (AB = S+U+N)  
 
-Ausgabe:
+   Ausgabe:
 1) Informative Darstellung der ermittleten Werte 
 
 
 
 ''' 
 #Eingabe der Werte
+
 mannschaftsname = input('Mannschaftsname : ')
 anz_siege = int(input('Anzahl der Siege : '))
 anz_unentschieden = int(input('Anzahl der Unentschieden : '))
@@ -50,6 +52,7 @@ absolvierte_begegnungen = anz_siege +anz_unentschieden + anz_niederlagen
 
 #Ausgabe der Werte
 print('Die ' ,mannschaftsname, ' hat',gesamt_punkte,'Punkte erreicht.')
+# oder ('Deine Mannschaft ', mannschaft ,'hat folgedes erreicht:' )
 print('Die ' , mannschaftsname,  ' hat',absolvierte_begegnungen,'Begegnungen absolviert.')
 
 
