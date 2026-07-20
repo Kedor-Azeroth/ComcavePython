@@ -71,6 +71,7 @@ print('Gesamttrainingsdauer in Stunden: ' ,dauer_stunde)
 - Berechne Gesamtpreis für jede Obstsorte
 - Berechne Gesamtsumme
 - Berechne Anzahl der verschiedenen Obstsorten (immer 3, da 3 Sorten)
+
 - Ausgabe:
 
 - Gesamtsumme in Euro
@@ -78,20 +79,56 @@ print('Gesamttrainingsdauer in Stunden: ' ,dauer_stunde)
 '''
 #Eingabe
 apfel = int(input('Anzahl Äpfel: '))
-banane = int(input('Anzahl Bananen: '))
-orange = int(input('Anzahl Orangen: '))
+bananen = int(input('Anzahl Bananen: '))
+orangen = int(input('Anzahl Orangen: '))
 
 #Berechnung
 apfel_preis = apfel * 0.89
-banane_preis = banane * 0.49
-orangen_preis = orange * 0.69
+bananen_preis = bananen * 0.49
+orangen_preis = orangen * 0.69
 
-gesamt_summe = apfel + banane + orange
+gesamt_summe = apfel_preis + bananen_preis + orangen_preis
+
+# Anzahl der Obstsorten
+obstsorten = ['Apfel', 'Banane', 'Orange']
+anzahl_sorten = len(obstsorten)
+
+durchschnitt_frucht = gesamt_summe / anzahl_sorten 
+
+print('Anzahl der Obstsorten: ', anzahl_sorten)
+print('Gesamtsumme: ', gesamt_summe, ' Euro.' )
+print('Durchschnitts Preis pro Frucht: ', durchschnitt_frucht, ' Euro.')
 
 
 
 
 
-'''Aufgabe                  '''
-'''Aufgabe                  '''
-'''Aufgabe                  '''
+'''Aufgabe Reisebüro Eingabe:
+• Anzahl Erwachsene (320 €/Person)
+• Anzahl Kinder (180 €/Person)
+• Anzahl Babys (0 €/Person, aber 25 € Gebühr pro Baby)
+Verarbeitung:
+• Berechne Gesamtpreis für Erwachsene, Kinder, Babys
+• Berechne Gesamtzahl der Passagiere
+• Berechne Gesamtkosten
+Ausgabe:
+• Gesamtzahl Passagiere
+• Gesamtkosten in Euro                 '''
+
+
+
+'''Aufgabe Aufgabe 5: Handwerker - Farbbedarf
+Szenario: Ein Maler berechnet, wie viel Farbe für eine Wand benötigt wird.
+Eingabe:
+• Wandhöhe in Metern (z.B. 2.5)
+• Wandbreite in Metern (z.B. 4.0)
+• Anzahl der Wände (gleiche Größe)
+Verarbeitung:
+• Berechne Fläche einer Wand (Höhe × Breite)
+• Berechne Gesamtfläche aller Wände
+• Pro Quadratmeter werden 0.15 Liter Farbe benötigt
+• Berechne Farbbedarf in Litern (auf 1 Nachkommastelle gerundet)
+Ausgabe:
+• Gesamtfläche in Quadratmetern
+• Benötigte Farbe in Litern                '''
+
