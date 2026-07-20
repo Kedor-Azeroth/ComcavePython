@@ -37,11 +37,11 @@ anz_unentschieden = int(input('Anzahl der Unentschieden: '))
 anz_niederlagen = int(input('Anzahl der Niederlagen: '))
 
 #Verarbeitung der Werte
-punkte = anz_siege * 3 + anz_unentschieden * 1 + anz_niederlagen * 0
+gesamt_punkte = anz_siege * 3 + anz_unentschieden * 1 + anz_niederlagen * 0
 absolvierte_begegnungen = anz_siege +anz_unentschieden + anz_niederlagen    
 
 #Ausgabe der Werte
-print('Die Mannschaft hat',punkte,'Punkte erreicht.')
+print('Die Mannschaft hat',gesamt_punkte,'Punkte erreicht.')
 print('Die Mannschaft hat',absolvierte_begegnungen,'Begegnungen absolviert.')
 
 
