@@ -155,5 +155,5 @@ wandflaeche_gesamt = wandflaeche * anz_wand
 farbemenge = round (wandflaeche_gesamt * 0.15, 1)
 
 #Ausgabe
-print('Die Gesamtfläche in Qudratmeter lautet : ',wandflaeche_gesamt,)
+print('Die Gesamtfläche in m² lautet : ',wandflaeche_gesamt,)
 print('Benötigte Farbe in Liter : ' ,farbemenge)
