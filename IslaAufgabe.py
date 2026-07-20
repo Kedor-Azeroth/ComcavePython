@@ -1,8 +1,0 @@
-'''Aufgabe                  '''
-'''Aufgabe                  '''
-'''Aufgabe                  '''
-'''Aufgabe                  '''
-'''Aufgabe                  '''
-'''Aufgabe                  '''
-'''Aufgabe                  '''
-'''Aufgabe                  '''
