@@ -72,3 +72,4 @@ Es könnte auch eine To-Do Liste
 # print("Hello" * 3)
 # a = int('3') *3 string wird in int umgewandelt und mit 3 multipliziert
 # dauer_stunde = round ((geh_zeit + jogging_zeit + schwimm_zeit )/60, 2)             # gerundet 
+#round(wandflaeche_gesamt * 0.15, 1)  # 0.15 Liter pro m²
