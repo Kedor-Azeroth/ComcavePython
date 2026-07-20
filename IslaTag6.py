@@ -52,7 +52,12 @@ absolvierte_begegnungen = anz_siege +anz_unentschieden + anz_niederlagen
 
 #Ausgabe der Werte
 print('Die ' ,mannschaftsname, ' hat',gesamt_punkte,'Punkte erreicht.')
-# oder ('Deine Mannschaft ', mannschaft ,'hat folgedes erreicht:' )
+# oder print('Deine Mannschaft ', mannschaft ,'hat folgedes erreicht:' )
 print('Die ' , mannschaftsname,  ' hat',absolvierte_begegnungen,'Begegnungen absolviert.')
+# || print('- Erreichte Puhkte :' gesamt_punkte)
+# || print(' - Absolvierte Begegnungen:', ab )
+
+
+
 
 
