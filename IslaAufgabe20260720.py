@@ -9,18 +9,24 @@ fahrenheit = umrechnung * 9 / 5 + 32
 kelvin = umrechnung + 273.15
 
 # Ausgabe
-print('Temperatur in Fahrenheit ist:', fahrenheit)
-print('Temperatur in Kelvin ist:', kelvin)
+print('Temperatur in Kelvin ist:', round(fahrenheit, 2))
+print('Temperatur in Kelvin ist:', round(kelvin, 2))
 
+print(round('Temperatur in Fahrenheit ist:', fahrenheit,2))
+print(round('Temperatur in Kelvin ist:', kelvin,2))
+
+print(round(kelvin, 3), 'K')
+print(round(fahrenheit, 3), 'F' )
 
 '''Aufgabe Entwickle ein Programm, mit dem der Flächeninhalt eines Dreiecks berechnen lässt'''
 
-#Eingabe
+#Eingabe 
 g = float (input('Dreieck Seitenlänge Grundseite:'))
 h = float (input('Dreieck Seitenlänge Höhe:'))
 
 #Verarbeitung
 A= (g*h) /2
+#A = 1/2 * hoehe * grundseite
 
 #Ausgabe
 print('Der Flächeninhalt lautet:', A)
@@ -160,12 +166,15 @@ print('Benötigte Farbe in Liter : ' ,farbemenge)
 
 
 '''Getraenkemarkt'''
+#Eingabe
 bierkisten = int(input('Anzahlkisten:'))
 wasserkisten = int(input('Anzahl Wasser-Kisten:'))
 einzelflaschen = int(input('Anzahl einzelne Flaschen'))
 
+#Verarbeitung
 gesamt_flaschen = bierkisten *  + wasserkisten *  + einzelflaschen
 gesamt_pfand = gesamt_flaschen * 0.25
 
+#Ausgabe
 print('Gesamtzahl Flaschen:', gesamt_flaschen)
 print('Gesamtpfand:' ,gesamt_pfand, 'Euro')
