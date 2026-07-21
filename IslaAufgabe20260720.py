@@ -157,3 +157,15 @@ farbemenge = round (wandflaeche_gesamt * 0.15, 1)
 #Ausgabe
 print('Die Gesamtfläche in m² lautet : ',wandflaeche_gesamt,)
 print('Benötigte Farbe in Liter : ' ,farbemenge)
+
+
+'''Getraenkemarkt'''
+bierkisten = int(input('Anzahlkisten:'))
+wasserkisten = int(input('Anzahl Wasser-Kisten:'))
+einzelflaschen = int(input('Anzahl einzelne Flaschen'))
+
+gesamt_flaschen = bierkisten *  + wasserkisten *  + einzelflaschen
+gesamt_pfand = gesamt_flaschen * 0.25
+
+print('Gesamtzahl Flaschen:', gesamt_flaschen)
+print('Gesamtpfand:' ,gesamt_pfand, 'Euro')
