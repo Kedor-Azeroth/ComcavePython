@@ -60,4 +60,3 @@ print('Die ' , mannschaftsname,  ' hat',absolvierte_begegnungen,'Begegnungen abs
 
 
 
-
