@@ -102,7 +102,7 @@ finally:                                 #wird immer ausgeführt
 #                   finally
 #try = ausprobieren → except = Fehler behandeln → else = kein Fehler → finally = immer ausführen.
 #Beispiel zum Anfangen
-'''Getraenkemarkt'''
+'''Getraenkemarkt Fehler abfangen
 try:
 #Eingabe
     bierkisten = int(input('Anzahlkisten:'))
@@ -118,9 +118,10 @@ else:
 #Verarbeitung
 
 #Ausgabe
+'''
 
 #Beispiel zum Anfangen von Fehlern
-'''Getraenkemarkt
+'''Getraenkemarkt  VAriable negativ Zahlen
 try:
 #Eingabe
     bierkisten = int(input('Anzahlkisten:'))
@@ -141,8 +142,9 @@ else:
 #Ausgabe
     print('Gesamtzahl Flaschen:', gesamt_flaschen)
     print('Gesamtpfand:' ,gesamt_pfand, 'Euro')'''
+
 #Alternative
-'''Getraenkemarkt
+'''Getraenkemarkt if raise 
 try:
 #Eingabe Eingabe wird bei Falsch abgebrochen.
     bierkisten = int(input('Anzahlkisten:'))
@@ -192,3 +194,44 @@ if 2 == 3:
     print("Die Zahlen sind gleich")
 
     '''
+'''Fallbeispiel:
+try:
+    anz_bierkisten = int(input("Wie viele Bierkisten (12 Flaschen)? "))
+    if anz_bierkisten < 0:
+        raise ValueError
+    anz_wasser_kisten = int(input("Wie viele Wasser-Kisten (6 Flaschen)? "))
+    if anz_wasser_kisten < 0:
+        raise ValueError
+    anz_einzelflaschen = int(input("Wie viele einzelne Flaschen? "))
+    if anz_einzelflaschen < 0:
+        raise ValueError
+except ValueError:
+    print("Das ist keine valide Eingabe!")
+except KeyboardInterrupt:
+    print("\nDas Programm wurde durch dich beendet!")
+    try:weitere Handlings möglich
+    except
+    else
+    finally
+else:
+    gesamt_flaschen = anz_bierkisten * 12
+    gesamt_flaschen = gesamt_flaschen + anz_wasser_kisten * 6
+    gesamt_flaschen = gesamt_flaschen + anz_einzelflaschen
+
+    # --- if/elif/else Fallunterscheidung ---
+    if gesamt_flaschen > 0:
+        gesamt_pfand = gesamt_flaschen * 0.25
+        print("\n--- Pfandabrechnung ---")
+        print("Anzahl Bierkisten:", anz_bierkisten)
+        print("Anzahl Wasser-Kisten:", anz_wasser_kisten)
+        print("Anzahl Einzelflaschen:", anz_einzelflaschen)
+        print("Gesamtzahl Flaschen:", gesamt_flaschen)
+        print("Gesamtpfand:", gesamt_pfand, "Euro")
+    elif gesamt_flaschen == 0:
+        print("\nDu hast keine Flaschen angegeben – kein Pfand fällig.")
+    else:
+        print("\nFehler: negative Flaschenzahl aufgetreten.")
+     if
+     elif
+     else
+     '''
