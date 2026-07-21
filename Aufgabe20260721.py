@@ -7,8 +7,28 @@ Eingabe:
 - Anzahl (Ganzzahl!)
 Beispiel -> summe = 3.7 anzahl = 4
 
-Ausgabe:
-3.7 / 4
+try:
+       summe = float(input('Geben Sie einen Zahl an:'))
+       if summe <=0:
+              raise ValueError
+       anzahl = int(input('Geben Sie einen Ganzzahl an:'))
+       if anzahl <=0:
+              raise ValueError
+except ValueError:
+       print('Dieses ist keine gültiger Eingabewert!')   
+except ZeroDivisionError:
+       print('Die Division durch 0 ist nicht möglich!')           
+except KeyboardInterrupt:
+       print('Das Programm wurde durch Sie abgebrochen!')
+else:       
+       #Verarbeitung:
+       durchschnitts_wert = summe / anzahl
+       #Ausgabe
+       #3.7 / 4
+       print('Ihr Durchschnittswert lautet',durchschnitts_wert)
+
+
+
 
 Arbeitet mit try-except-else!
 
