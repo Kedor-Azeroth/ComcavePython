@@ -28,6 +28,68 @@ else:
 Arbeitet mit try-except-else!
 BONUS) Was passiert wenn Anzahl = 0?
 '''
+"""
+
+Übung 1:
+Eine Schule möchte die Ermittlung der Noten ihrer Schüler 
+digital durchführen.
+
+Dabei soll der Lehrer (=Nutzer) eine Punktzahl eingeben 
+und eine Note ausgegeben bekommen.
+
+Die Note wird anhand folgender Formel berechnet:
+
+weniger als 35 Punkte -> 6
+mind. 35 Punkte -> 5
+mind. 50 Punkte -> 4
+mind. 60 Punkte -> 3
+mind. 75 Punkte -> 2
+mind. 85 Punkte -> 1
+
+Anmerkung: Die Maximalpunktzahl beträgt 100 Punkte!
+Anmerkung: Die Minimalpunktzahl beträgt 0 Punkte!
+"""
+'''
+try:
+       nutzer = int(input('Bitte Punkteanzahl eingeben:'))
+       if nutzer < 0 or nutzer > 100:
+               raise ValueError
+except ValueError:
+       print('Ihr Eingegebener Wert liegt ausserhalb des Notenschlüssels!')               
+except KeyboardInterrupt:
+       print('Das Programm wurde durch Sie abgebrochen!')
+else:
+#Verarbeitung
+       if nutzer < 35:
+              note = 6
+       elif nutzer < 50:
+              note = 5
+       elif nutzer < 60:
+              note = 4
+       elif nutzer < 75:
+              note = 3
+       elif nutzer < 85:
+              note = 2
+       else:
+              note = 1
+
+print('Die eingegebenen Punkte entsprechen einer:', note)              
+'''
+       
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 '''
 Entwickle ein Kopf-oder-Zahl Spiel
 
@@ -56,32 +118,6 @@ BONUS) Finde heraus, wie du den Zufall über
 
 
 m_computer = "zahl"'''
-
-
-"""
-
-Übung 1:
-Eine Schule möchte die Ermittlung der Noten ihrer Schüler 
-digital durchführen.
-
-Dabei soll der Lehrer (=Nutzer) eine Punktzahl eingeben 
-und eine Note ausgegeben bekommen.
-
-Die Note wird anhand folgender Formel berechnet:
-
-weniger als 35 Punkte -> 6
-mind. 35 Punkte -> 5
-mind. 50 Punkte -> 4
-mind. 60 Punkte -> 3
-mind. 75 Punkte -> 2
-mind. 85 Punkte -> 1
-
-Anmerkung: Die Maximalpunktzahl beträgt 100 Punkte!
-Anmerkung: Die Minimalpunktzahl beträgt 0 Punkte!
-"""
-
-
-
 
 
 
