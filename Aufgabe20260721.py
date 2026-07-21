@@ -75,21 +75,6 @@ else:
 
 print('Die eingegebenen Punkte entsprechen einer:', note)              
 '''
-       
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 '''
 Entwickle ein Kopf-oder-Zahl Spiel
 
@@ -115,9 +100,25 @@ BONUS) Finde heraus, wie du den Zufall über
 
        den Wert des Computers entscheiden lässt
 
-
-
-m_computer = "zahl"'''
+'''
+try:
+       import random
+       user = (input('Bitte eingeben Kopf oder Zahl ein:'))
+       user = user.lower()
+       m_computer = ['zahl','kopf']
+       if user not in m_computer:
+              raise ValueError
+except ValueError:
+       print('Dieses ist keine gültiger Eingabewert!')   
+except KeyboardInterrupt:
+       print('Das Programm wurde durch Sie abgebrochen!')
+#Verarbeitung
+else:       
+       computer = random.choice(m_computer)
+       if user == computer:
+              print('Gewonnen!')
+       else:
+              print('Das war leider nix vielleicht hast du bei nächstenmal mehr Glück.')
 
 
 
