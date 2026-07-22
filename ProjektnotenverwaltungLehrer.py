@@ -1,6 +1,9 @@
-#Anforderungen: Copyright René Drees
-# jegliche vervielfälltigung meines Geistigeneigentums wird zur Anzeigen gebracht.
-# Aus DSGVO alle Daten wurden Anonymisiert 
+# Copyright René Drees
+# Jegliche Vervielfältigung meines geistigen Eigentums wird zur Anzeige gebracht.
+# Aus DSGVO-Gründen wurden alle Daten anonymisiert.
+
+# logischen Ablauf (Soll-Verhalten, Struktur, ggf. Pseudocode-Schnipsel
+# Anforderungen: 
 # Variablen & Datentypen,(int,float,str,bool)
 # Listen (Speicherung der Punkte)
 # for und while -Schleifen
@@ -41,6 +44,7 @@ schueler_id = int
 #      'Exit = Menü'
 8 - ('Punkte löschen')
 #      'Exit = Menü'
+9 - ('Bestehendsquote')
 
 #Nummer 1:
 schueler_id = int(input('Bitte geben Sie die Schüler id ein 1 -10'))
@@ -114,7 +118,7 @@ else:
 #        print('Bitte "e" DRÜCKEN! e nicht a b oder c einfach "e"')
 #except KeyboardInterrupt:
 #        print("Abbruch durch User")
-# print ("Programm beendet. Auf Wiedersehen!")
+# print ("Programm beendet.Auf Wiedersehen!")
 #    break
 # print ('Back to Menü')
 
@@ -156,12 +160,19 @@ punkte_zahl = float(input('Wie viele Punkte möchten Sie eingeben?'))
 # print ('Back to Menü')
 
 
+# Nummer 9:
+# Bestehensquote ?  Schülerzählen wieviele schüler > 50 Punkte
+# Gib aus: "Bestehensquote: 75.0% (6 von 8 Schülern)
+
+#  print ('Back to Menü')
 
 
 
 
 
 
+
+'''
 #Muster
 import os
 
@@ -245,3 +256,4 @@ while True:
     else:
         print("Das verstehe ich nicht.")
         os.system("read -p 'Weiter mit Enter...'") # in Windows: "pause"
+'''
