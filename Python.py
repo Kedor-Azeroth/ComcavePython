@@ -280,3 +280,19 @@ my_list.reverse() # Liste umdrehen: [100, 140, 160, 180] -> [180, 160, 140, 120]
 print(my_list)
 my_list.sort()
 print(my_list)
+#iterieren: im Satz wiederholen,  iteration: eine Iteration vornehmen; wiederholen, um sich einer schrittweisen Lösung zu nähern
+#wir iterieren my_list
+# index     0    1    2    3    4    5    6
+my_list = [80, 100, 120, 140, 160, 180, 200]
+
+for elem in my_list:
+    print(elem)
+
+for i, elem in enumerate(my_list):
+    print("Index:", i)
+    print("Element:", elem)
+    print()
+
+for i in range(100):
+    x = 1
+    #print(i)
