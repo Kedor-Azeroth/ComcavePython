@@ -235,3 +235,48 @@ else:
      elif
      else
      '''
+
+# index:     0    1    2
+my_list = [100, 120, 140]
+
+print(my_list[0]) # erstes Element
+print(my_list[1]) # zweites Element
+print(my_list[2]) # drittes Element
+#print(my_list[3]) IndexError -> Index 3 existiert nicht!
+print(my_list[-1]) # letztes Element
+print(my_list[-2]) # vorletztes Element
+print(my_list[-3]) # vorvorletztes Element
+#print(my_list[-4]) IndexError -> Index -4 existiert nicht!
+
+x = my_list[0]
+
+# Elemente hinzufügen:
+my_list.append(160) # ein Element ans Ende
+my_list.extend([180, 200]) # mehrere Elemente ans Ende
+#my_list = my_list + [180, 200] # selber Effekt wie in der Zeile davor
+my_list.insert(0, 80) # ein Element in beliebiger Position
+
+print(my_list)
+
+# Elemente entfernen:
+#my_list.clear() # entfernt alle Elemente
+#print(my_list)
+my_list.pop() # letztes Element entfernen
+my_list.pop(0) # beliebiges Element über den Index entfernen (hier: das erste Element)
+my_list.remove(120) # beliebiges Element über den Wert entfernen
+print(my_list)
+if 2000 in my_list: # prüfe, ob 2000 in der Liste vorkommt
+    my_list.remove(2000) # entferne den Wert 2000
+
+# Elemente verändern:
+my_list[0] = 120
+print(my_list)
+
+# Weitere Möglichkeiten:
+print(my_list.count(140)) # Zählen, wie oft die 140 vorkommt
+print(my_list.index(120)) # Position (=Index), in der sich das Element 120 befindet
+#print(my_list.index(2000)) # ValueError, da Element 2000 nicht existiert
+my_list.reverse() # Liste umdrehen: [100, 140, 160, 180] -> [180, 160, 140, 120]
+print(my_list)
+my_list.sort()
+print(my_list)
