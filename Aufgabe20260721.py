@@ -60,7 +60,7 @@ except KeyboardInterrupt:
        print('Das Programm wurde durch Sie abgebrochen!')
 else:
 #Verarbeitung
-       if nutzer < 35:
+       if nutzer < 35:                  alternative if nutzer < 0 (print) elif nutzer < 35:
               note = 6
        elif nutzer < 50:
               note = 5
@@ -69,12 +69,34 @@ else:
        elif nutzer < 75:
               note = 3
        elif nutzer < 85:
-              note = 2
-       else:
-              note = 1
+              note = 2                      elif nutzer <=100:print(1)
+       else:                               #else(wet zu groß)
 
 print('Die eingegebenen Punkte entsprechen einer:', note)              
 '''
+#Alternative
+try:
+    punktzahl = int(input("Punktzahl: "))
+except ValueError:
+    print("Bitte eine Ganzzahl eingeben!")
+else:
+    if punktzahl < 0:
+        print("Wert zu klein!")
+    elif punktzahl < 35:
+        print("Note 6")
+    elif punktzahl < 50:
+        print("Note 5")
+    elif punktzahl < 60:
+        print("Note 4")
+    elif punktzahl < 75:
+        print("Note 3")
+    elif punktzahl < 85:
+        print("Note 2")
+    elif punktzahl <= 100:
+        print("Note 1")
+    else:
+        print("Wert zu groß!")
+
 '''
 Entwickle ein Kopf-oder-Zahl Spiel
 
@@ -114,12 +136,30 @@ except KeyboardInterrupt:
        print('Das Programm wurde durch Sie abgebrochen!')
 #Verarbeitung
 else:       
-       computer = random.choice(m_computer)
+       computer = random.choice(m_computer)    #computer = random.choice('Kopf','Zahl')
        if user == computer:
               print('Gewonnen!')
        else:
               print('Das war leider nix vielleicht hast du bei nächstenmal mehr Glück.')
 
+#Alternative
+import random
+
+m_computer = random.choice(["kopf", "zahl"])
+m_user = input("Kopf oder Zahl? ")
+m_user = m_user.lower()
+
+try:
+    if m_user != "kopf" and m_user != "zahl":
+        raise ValueError
+except ValueError:
+    print("Das ist keine valide Eingabe!")
+else:
+    print("Der Computer hat gewählt:", m_computer)
+    if m_user == m_computer:
+        print("Sehr gut! Du hast gewonnen.")
+    else:
+        print("Schade! Du hast verloren.")
 
 
 
