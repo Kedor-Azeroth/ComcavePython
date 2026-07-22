@@ -56,12 +56,23 @@ while versuche > 0:
     else:
             print('Leider falsch')
             versuche = versuche -1
+
 #alternative
-versuche = 3
+import random
+print('Bitte nur ganz Zahlen:')
+bot_nr = random.randint(1,10) # zufälliger int zw. 1 & 10
 print (bot_nr)
+versuche = 3
+
 
 while versuche > 0:
-    usr_nr = int(input('Zahl'))
+    try:
+        usr_nr = int(input('Zahl'))
+        if usr_nr <1 or usr_nr > 10:
+            raise ValueError
+    except ValueError:
+        print('Fehler')
+        versuche = versuche -1
 
     if usr_nr == bot_nr:
         print('Win')
