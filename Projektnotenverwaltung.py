@@ -39,41 +39,66 @@ while True:
 
     if   auswahl == '1':
         while True:
+            print()
             print('"Du bist im Menü "Punkte eingeben"')
+            print()
+            break
         
     elif auswahl == '2':
         while True:
+                    print()
                     print('"Du bist im Menü "Alle Punkte anzeigen"')
+                    print()
+                    break
 
     elif auswahl == '3':
         while True:
+                    print()
                     print('"Du bist im Menü "Durchschnitt berechen"')
+                    print()
+                    break
         
     elif auswahl == '4':
         while True:
+                    print()
                     print('"Du bist im Menü "Note aus Punktezahl ermitteln"')
+                    print()
+                    break
         
     elif auswahl == '5':
         while True:
+                    print()
                     print('"Du bist im Menü "Min, Max Auswertung"')
+                    print()
+                    break
 
     elif auswahl == '6':
         while True:
+                    print()
                     print('"Du bist im Menü "Notenspiegel"')
-        
+                    print()
+                    break
     elif auswahl == '7':
         while True:
+                    print()
                     print('"Du bist im Menü "Punkte löschen"')
-        
+                    print()
+                    break
     elif auswahl == '8':
         while True:
+                    print()
                     print('"Bestehendesquote"')
-        
+                    print()
+                    break
     elif auswahl == '9':
+        print()
         print ("Programm beendet.Auf Wiedersehen!")
+        print()
         break
     else:
+         print()
          print('Eingabe nicht verstanden')
+         print()
     if os.name == 'nt':     # Windows 'nt' ist muss
          os.system("pause")
     else:                     # Linux/macOS
