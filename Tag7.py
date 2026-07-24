@@ -1,3 +1,4 @@
+'Zusammenfassung'
 import random
 
 bot_nr = random.randint(1,10) # zufälliger int zw. 1 & 10
