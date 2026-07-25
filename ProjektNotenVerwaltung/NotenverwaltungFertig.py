@@ -1,4 +1,4 @@
-# Copyright René Drees 
+# Copyright René Drees
 # Jegliche Vervielfältigung meines geistigen Eigentums wird zur Anzeige gebracht.
 # Aus DSGVO-Gründen wurden alle Daten anonymisiert.
 # logischen Ablauf (Soll-Verhalten, Struktur, ggf. Pseudocode-Schnipsel
@@ -12,7 +12,7 @@
 # Lehrer erfasst Punkte von Schülern um diese zuverwalten.
 # Lehrer insert,delete,auswerten & Statistiken wieder geben.
 # Menü l
-# python3 /Projekte_Games/Projekte/ComcavePython/ProjektNotenVerwaltung/Projektnotenverwaltung.py
+#
 import os
 
 punkte_liste = [[] for _ in range(10)]  # Index 0 = Schüler 1, ... Index 9 = Schüler 10
@@ -36,7 +36,7 @@ while True:
     auswahl = input('>>> Ihre Eingabe:  ')   #Eingabe erforderlich
 
     if auswahl == '1':
-        anzahl = int(input('Für wie viele Schüler möchtest du gleich Punkte eingeben?: '))
+        anzahl = int(input('Für wie viele Punktwerte möchtest du gleich Zahlen eingeben?: '))
         abbruch = False   # neu: merkt sich, ob der Nutzer abbrechen will
 
         for i in range(anzahl):   #index der Liste
@@ -221,7 +221,7 @@ while True:
 '''
 # Nummer 2:
 # Alle Schüler mit Ihren Punkten anzeigen lassen 
-Drücke input('')
+
 #Eingegebene Punkte für Sven:[45.5, 78.0, 92.5, 33.0 ] 
   
 
