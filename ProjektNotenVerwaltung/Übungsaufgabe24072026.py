@@ -77,9 +77,9 @@ result = process_order([10, 20, 30], 100, "vip", True)
 print(result)  # (60, True)
 
 
-def process_order(items, max_price, customer_type, verbose):
+def process_order(items, max_price, customer_type, verbose): 
     # Randbedingung: Leere Liste
-    if not items:
+    if not items:  #Wächter Clausel
         if verbose:
             print("Warnung: Die Bestellliste ist leer.")
         return (0, False)
@@ -104,3 +104,30 @@ def process_order(items, max_price, customer_type, verbose):
 
     # 4. Rückgabe als Tuple
     return (total, is_approved)
+result = process_order([10, 20, 30], 50, "regular", False)
+print(result)  # (60, False)
+
+# Mit Nebeneffekten
+result = process_order([10, 20, 30], 100, "vip", True)
+print(result)  # (60, True)
+'''Bei Fragen:
+Die Funktion prüft, ob eine Bestellung im Budget liegt, und liefert Summe und Ergebnis zurück.
+
+Ablauf
+
+Guard Clause: Ist items leer, bricht die Funktion sofort mit (0, False) ab. Alles Weitere wird gar nicht erst erreicht.
+Summe: sum(items) addiert alle Beträge.
+Budget: Ein VIP bekommt per Bedingungsausdruck das 1,5-fache Limit, alle anderen das normale. Der Vergleich total <= effective_max liefert direkt einen Wahrheitswert.
+Verbose: Nur wenn gewünscht, werden Artikel, Summe und Entscheidung ausgegeben. Das ändert das Ergebnis nicht — reiner Nebeneffekt.
+Rückgabe: Ein Tupel aus Summe und Genehmigung.
+
+Die beiden Aufrufe
+
+Aufruf	Limit effektiv	Summe	Ergebnis	Ausgabe
+[10,20,30], 50, regular, False	50	60	(60, False)	nur das Tupel
+[10,20,30], 100, vip, True	150	60	(60, True)	Artikel, Summe, „Bestätigt!", dann Tupel
+
+
+
+
+'''
