@@ -103,7 +103,7 @@ def process_order(items, max_price, customer_type, verbose): #verbose = ausführ
             print(f"Artikel: {item}")
         print(f"Gesamtsumme: {total}")
 
-        if is_approved:
+        if is_approved:#is_approved = ist genehmigt / wurde freigegeben bool wert
             print("Bestätigt!")
         else:
             print("Abgelehnt!")
