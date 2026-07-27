@@ -15,7 +15,7 @@
 # Menü l
 #
 
-
+'''
 
 title = str;
 title('Notenverwaltung')
@@ -27,7 +27,7 @@ schueler_id = int
 
 
 #Menü
-'''Notenverwaltung'''
+    #Notenverwaltung
 1 - ('Punkte eingeben')
 #       'Exit = Menü'
 2 - ('Alle Punkte anzeigen')
@@ -172,7 +172,7 @@ punkte_zahl = float(input('Wie viele Punkte möchten Sie eingeben?'))
 
 
 
-'''
+
 #Muster
 import os
 

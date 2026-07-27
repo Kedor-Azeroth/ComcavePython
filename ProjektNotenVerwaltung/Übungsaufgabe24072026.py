@@ -8,6 +8,7 @@ print(result)  # 15.0
 
 def greet_user(name, age):
     return ('Hallo ' + name + '! Du bist ' + str(age) + ' Jahre alt.')
+    #greet_user = f"Hallo {name}! Du bist {age} Jahre alt."
 
 result = greet_user("Anna", 25)
 print(result)
@@ -23,12 +24,13 @@ def is_discount_valid(price, discount_percent, coupon_code):
     if  price < 50:
         print('Preis zuniedrig')
         return False
+        
 
-    if discount_percent < 5 or discount_percent > 30:
+    if discount_percent < 5 or discount_percent > 30:#geht auch elif
        price('Rabatt außerhalb des Bereichs')
        return False
 
-    if not coupon_code.startswith("SAVE"):
+    if not coupon_code.startswith("SAVE"): # geht auch elif
         print('Ungültiger Coupon-Code')
         return False
 
@@ -77,7 +79,11 @@ result = process_order([10, 20, 30], 100, "vip", True)
 print(result)  # (60, True)
 
 
-def process_order(items, max_price, customer_type, verbose): 
+def process_order(items, max_price, customer_type, verbose): #verbose = ausführlich
+                                                             #Gibt an, ob ein Programm detaillierte Informationen ausgeben soll.
+                                                             #verbose = true → viele Logmeldungen und Details.
+                                                             #verbose = false → nur wichtige Meldungen.
+
     # Randbedingung: Leere Liste
     if not items:  #Wächter Clausel
         if verbose:
