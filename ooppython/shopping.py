@@ -28,22 +28,24 @@ class Warenkorb:
 
     def produkteAnzeigen(self):
         produkt_namen = []
-        for elem in self.produkte:
+        for elem in self.produkte:                           #Elem ist nur ein Variablenname 
             produkt_namen.append(elem.name)
         return produkt_namen
 
     def produktHinzufuegen(self, produkt):
         for elem in self.produkte:
-            if produkt.name == elem.name:
+            if produkt.name == elem.name:             # Wenn keine Produkte im Warenkorb sind, beende die Methode sofort
                 return
 
         self.produkte.append(produkt)
 
     def produktEntfernen(self, produkt):
-        for i, elem in enumerate(self.produkte):
+        for i, elem in enumerate(self.produkte):   #gibt numerate() liefert immer zwei Werte: Index & Element (0, "Anna"),(1, "Ben"),(2, "Chris")
+                                                    #    for index, element in enumerate(liste):
             if produkt.name == elem.name:
-               self.produkte.pop(i)
-
+               self.produkte.pop(i)                #    pop() entfernt ein Element aus einer Liste. /pop() entfernt das letzte!!!
+                                                    #  liste.clear() löscht alles innerhalb.          
+               
     def gesamtpreisBerechnen(self):
         gesamtpreis = 0.0
         for elem in self.produkte:
@@ -51,8 +53,10 @@ class Warenkorb:
         return gesamtpreis
 
     def bezahlen(self, kunde: Kunde):
-        if len(self.produkte) == 0:
-            return
+        if len(self.produkte) == 0:               #Len() ist eine eingebaute Python-Funktion.
+            return                                #Sie gibt die Anzahl der Elemente einer Datenstruktur zurück.; liste = [1, 2, 3];print(len(liste)); 3
+                                                  #text = "Hallo" print(len(text));self.produkte = [] ;len(self.produkte) ;0
+                                                  # Wenn keine Produkte im Warenkorb sind, beende die Methode sofort
         gesamtpreis = self.gesamtpreisBerechnen()
         abheben_erfolgreich = kunde.abheben(gesamtpreis)
         if abheben_erfolgreich:

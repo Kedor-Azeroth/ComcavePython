@@ -13,7 +13,7 @@ class Krieger:
         gegner.lebenspunkte = gegner.lebenspunkte - schaden
 
     @classmethod
-    def from_name(cls, name):
+    def from_name(cls, name): # cls wichtig
         return cls(name)
 
     @staticmethod
