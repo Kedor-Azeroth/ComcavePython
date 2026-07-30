@@ -1,21 +1,3 @@
-# Kommentieren # oder '''    '''
-# False und True immer Anfang Groß
-
-# Klassen in Python definieren
-x = 3
-print(type(x))
-# x ist ein Objekt, instanziiert von der Klasse int
-# Ausgabe: <class 'int'>
-######################################################################################################
-def f():
-    pass
-print(type(f))
-# f ist ein Objekt, instanziiert von der Klasse function
-# Ausgabe: <class 'function'>
-
-print(type(int))
-print(type(type))
-#########################################################################################################
 class SmartPhone:                                         #CamelCase
   
     akkuStand = 15
@@ -38,7 +20,7 @@ class SmartPhone1:
                                                              
                                                             #init initialisiert das Objekt mit Werten.
                                                             # 'self' = this. ist ein Platzhalter für das zukünftige Objekt.' 
-                                                            # self' ist eine Referenz auf aktuelle Instanz (das aktuelle Objekt)
+                                                            #self' ist eine Referenz auf aktuelle Instanz (das aktuelle Objekt)
             self.akkuStand = akkuStand                      # links = objekt eigene AkkuStand ,rechts = Was beim Instanzieren mit gegeben wird. (15, False)
             self.eingeschaltet = eingeschaltet              # von unten nach oben und dan verteilt.!! Wie immer.
             self.offeneApps = 0
@@ -77,9 +59,29 @@ class SmartPhone1:
                 
             #|| self.flugmodus = not self.flugmodus        
             
-        def akkuAnzeigen(self):
-            return self.akkuStand            
-
+        def akkuAnzeigen(self):  # Mehr Kontrolle über den Zugriff sowie über Private erreichbar.
+            return str(self.akkuStand) + '%' 
+        
+        def alleAppsSchliessen(self):
+            if self.appSchliessen:
+                self.offeneApps = 0
+            
+        
+        def getAkkustand(self) -> int:    # was holen int 
+            return self.akkuStand
+        
+        def setAkkustand(self, akkuStand: int) -> None:     # setter kein Rückgabewerte nur Nebeneffekt None: nicht vorhanden.
+            if type(akkuStand) == int:
+                self.akkuStand = akkuStand
+            else:
+                raise TypeError('Akkustand muß int sein')    
+        #for Zeile 69    #self,akkuStand = akkuStand                      # besser mit get und set Arbeien
+        #Getter und Setter sind neben dem Konstruktor Standardmethoden einer Klasse.
+        #Der Konstruktor konstruiert neue Objekte und wird zur Instanziierung einer Klasse verwendet.  
+        #Der Getter (get)wird zum lesen bestehender Werte von Attributen gwtutzt
+        #Der Setter (set) wird zum setzen oder verändern von Werten der Attribute genutzt.
+        # Ich könnte pro Atribut(akkustand) getter und setter nutzen bei 4 Attribute kann ich 4 Getter und 4 Setter habe Also 8 Methoden.
+  
 
 
 #print(SmartPhone)
@@ -164,4 +166,11 @@ print('Smartphone eingeschaltet ? =',mein_handy1.eingeschaltet)
 print('offene App"s',mein_handy1.offeneApps)
 print('Flugmodus?',mein_handy1.flugmodus)
 
+#print(mein_handy1.akkuAnzeigen())
 
+#mein_handy1.setAkkustand(100)
+#mein_handy1.setAkkustand('a')
+
+print('Akkustand',mein_handy1.akkuStand)
+print('Meine Handy.alleAppsSchliessen()')
+mein_handy1.alleAppsSchliessen()
