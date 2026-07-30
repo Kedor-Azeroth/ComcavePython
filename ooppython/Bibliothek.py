@@ -1,5 +1,5 @@
 class Bibliothek:
-
+         # __init__ ist der Konstruktor
     def __init__(self, name, anzahlBuecher = 0, oeffnungszeiten = None, hatLesesaal = False, gruendungsjahr = 2026):
         self.name = name
         self.anzahlBuecher = anzahlBuecher

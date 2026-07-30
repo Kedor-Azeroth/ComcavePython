@@ -296,3 +296,140 @@ for i, elem in enumerate(my_list):
 for i in range(100):
     x = 1
     #print(i)
+'''
+Python-Lernzettel - Seite 1
+Python - wichtigste
+Befehle
+Kompakter Lernzettel für Listen, Strings,
+Funktionen, Dictionaries, Schleifen und Grundlagen
+Listen
+append(x)
+Hängt ein Element am Ende der Liste an. Beispiel:
+liste.append(5)
+insert(i, x)
+Fügt ein Element an einer bestimmten Position ein.
+Beispiel: liste.insert(1, 10)
+remove(x)
+Entfernt das erste Element mit diesem Wert. Beispiel:
+liste.remove("Milch")
+pop()
+Entfernt und liefert das letzte Element zurück.
+pop(i)
+Entfernt und liefert das Element am Index i zurück.
+clear()
+Löscht alle Elemente der Liste.
+sort()
+Sortiert die Liste aufsteigend.
+reverse()
+Kehrt die Reihenfolge der Elemente um.
+count(x)
+Zählt, wie oft ein Wert vorkommt.
+index(x)
+Liefert den Index des ersten passenden Wertes.
+Allgemeine Funktionen
+len(objekt)
+Gibt die Anzahl der Elemente zurück.
+print(x)
+Gibt einen Wert auf der Konsole aus.
+input()
+Liest eine Eingabe als String ein.
+type(x)
+Zeigt den Datentyp eines Wertes.
+int(x)
+Wandelt einen Wert in eine Ganzzahl um.
+float(x)
+Wandelt einen Wert in eine Kommazahl um.
+str(x)
+Wandelt einen Wert in einen String um.
+range(n)
+Erzeugt eine Zahlenfolge, meist für Schleifen.
+enumerate(liste)
+Liefert Index und Element gleichzeitig.
+sum(liste)
+Addiert Zahlenwerte einer Liste.
+min(liste) / max(liste)
+Liefert den kleinsten bzw. größten Wert.
+Strings
+upper()
+Wandelt Text in Großbuchstaben um.
+lower()
+Wandelt Text in Kleinbuchstaben um.
+strip()
+Entfernt Leerzeichen am Anfang und Ende.
+replace(a, b)
+Ersetzt Textbestandteile.
+split(trenner)
+Teilt einen String in eine Liste auf.
+join(liste)
+Verbindet Listenelemente zu einem String.
+startswith(x)
+Prüft, ob ein String mit einem Wert beginnt.
+endswith(x)
+Prüft, ob ein String mit einem Wert endet.
+Python-Lernzettel - Seite 2
+Dictionaries
+keys()
+Liefert alle Schlüssel.
+values()
+Liefert alle Werte.
+items()
+Liefert Schlüssel und Werte als Paare.
+get(key)
+Liest einen Wert sicher über den Schlüssel.
+pop(key)
+Entfernt einen Eintrag über den Schlüssel.
+update({...})
+Ergänzt oder ändert mehrere Einträge.
+clear()
+Löscht alle Einträge.
+Schleifen
+for element in liste:
+Durchläuft jedes Element einer Sammlung.
+for i in range(5):
+Wiederholt einen Block für die Werte 0 bis 4.
+for i, element in enumerate(liste):
+Durchläuft eine Liste mit Index und Element.
+while bedingung:
+Wiederholt einen Block, solange die Bedingung wahr
+ist.
+break
+Beendet eine Schleife sofort.
+continue
+Überspringt den aktuellen Schleifendurchlauf.
+Bedingungen
+if / elif / else
+Steuert, welcher Code ausgeführt wird.
+== != < > <= >=
+Vergleichsoperatoren.
+and / or / not
+Logische Operatoren für mehrere Bedingungen.
+in / not in
+Prüft, ob ein Wert enthalten ist.
+Klassen und Methoden
+class Name:
+Definiert eine Klasse.
+__init__(self, ...)
+Konstruktor: wird beim Erstellen eines Objekts
+ausgeführt.
+self.attribut
+Greift auf ein Attribut des aktuellen Objekts zu.
+def methode(self):
+Definiert eine Methode innerhalb einer Klasse.
+return wert
+Beendet eine Funktion oder Methode und gibt einen
+Wert zurück.
+Wichtige Operatoren
++= -= *= /=
+Kurzschreibweisen für Rechenoperationen.
+%
+Modulo: liefert den Rest einer Division.
+//
+Ganzzahldivision ohne Nachkommastellen.
+**
+Potenzrechnung.
+Merke: remove() löscht nach Wert, pop() löscht nach
+Index und gibt das entfernte Element zurück, clear()
+leert die komplette Sammlung.
+
+
+'''

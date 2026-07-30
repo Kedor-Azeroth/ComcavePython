@@ -21,7 +21,7 @@ class Produkt:
         self.name = name
         self.preis = preis
 
-class Warenkorb:
+class Warenkorb:                                           #Eine Liste für eine Liste,
 
     def __init__(self, produkte):
         self.produkte = produkte
@@ -60,7 +60,7 @@ class Warenkorb:
         gesamtpreis = self.gesamtpreisBerechnen()
         abheben_erfolgreich = kunde.abheben(gesamtpreis)
         if abheben_erfolgreich:
-            self.warenkorbLeeren()
+            self.warenkorbLeeren()               # vorher self.prodkte = []
             return True
         else:
             return False
