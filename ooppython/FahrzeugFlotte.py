@@ -20,7 +20,7 @@ class Vehicle:
         """Gibt zurück, ob das Fahrzeug elektrisch ist"""
         return False
     
-    def __repr__(self):
+    def __repr__(self):  #erstellt eine offizielle, eindeutige und möglichst exakte String-Darstellung eines Objekts
         return f"{self.jahr} {self.marke} {self.model}"
     
 class Car(Vehicle):
@@ -62,7 +62,7 @@ class Motorcycle(Vehicle):
         self.fuel_capacity = fuel_capacity
 
     def calculate_range(self):
-        return self.fuel_capacity / self.fuel_efficiency * 100
+        return (self.fuel_capacity / self.fuel_efficiency) * 100
 
     def service_interval(self):
         return 6

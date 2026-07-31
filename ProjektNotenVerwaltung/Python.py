@@ -433,3 +433,12 @@ leert die komplette Sammlung.
 
 
 '''
+
+class Singelton:
+    #Bereits erstellte
+    def __init__(self):
+        
+        
+s1 = Singelton
+s2 = Singelton        
+        
