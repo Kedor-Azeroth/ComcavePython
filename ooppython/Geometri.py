@@ -4,9 +4,7 @@ from abc import ABC, abstractmethod
 from typing import Dict, Any, Union, List, Optional
 from collections.abc import Iterable
 
-# ============================================================================
 # Teil A: Abstrakte Basisklasse und konkrete Klassen
-# ============================================================================
 
 class Shape(ABC):
     """Abstrakte Basisklasse für geometrische Formen"""
@@ -24,10 +22,8 @@ class Shape(ABC):
     def describe(self) -> str:
         """Gibt eine Beschreibung der Form zurück"""
         return f"This is a {type(self).__name__}"
-    
-    # ========================================================================
+   
     # Teil C: Klassenmethoden
-    # ========================================================================
     
     @classmethod
     def create_shape(cls, shape_type: str, *args) -> 'Shape':
@@ -55,10 +51,8 @@ class Shape(ABC):
         else:
             raise ValueError(f"Unknown shape type: {shape_type}")
     
-    # ========================================================================
     # Teil D: Statische Methoden
-    # ========================================================================
-    
+        
     @staticmethod
     def is_valid_shape(obj: Any) -> bool:
         """
@@ -108,11 +102,9 @@ class Rectangle(Shape):
     
     def perimeter(self) -> float:
         return 2 * (self.width + self.height)
-    
-    # ========================================================================
+   
     # Teil C: Klassenmethoden
-    # ========================================================================
-    
+       
     @classmethod
     def from_dict(cls, data: Dict[str, float]) -> 'Rectangle':
         """Erstellt Rectangle aus Dictionary"""
@@ -135,10 +127,8 @@ class Circle(Shape):
     
     def perimeter(self) -> float:
         return 2 * math.pi * self.radius
-    
-    # ========================================================================
+
     # Teil C: Klassenmethoden
-    # ========================================================================
     
     @classmethod
     def from_dict(cls, data: Dict[str, float]) -> 'Circle':
@@ -155,11 +145,9 @@ class Circle(Shape):
     def from_diameter(cls, diameter: float) -> 'Circle':
         """Erstellt Circle aus Durchmesser"""
         return cls(diameter / 2)
-    
-    # ========================================================================
+
     # Teil D: Statische Methoden
-    # ========================================================================
-    
+      
     @staticmethod
     def pi_approx(n: int) -> float:
         """
@@ -197,10 +185,8 @@ class Triangle(Shape):
     
     def perimeter(self) -> float:
         return self.side1 + self.side2 + self.side3
-    
-    # ========================================================================
+   
     # Teil C: Klassenmethoden
-    # ========================================================================
     
     @classmethod
     def from_dict(cls, data: Dict[str, float]) -> 'Triangle':
@@ -213,9 +199,7 @@ class Triangle(Shape):
         parts = shape_string.split(':')[1].split(',')
         return cls(float(parts[0]), float(parts[1]), float(parts[2]))
 
-# ============================================================================
 # Teil B: Polymorphie ohne Vererbung (Duck Typing)
-# ============================================================================
 
 # KORREKTUR: Diese Funktionen müssen außerhalb der Klassen definiert werden
 def print_shape_info(shape):
@@ -244,9 +228,7 @@ def print_area_comparison(shape1, shape2):
     else:
         print(" Beide Shapes haben die gleiche Fläche")
 
-# ============================================================================
 # Zusätzliche Herausforderung (optional): ShapeCollection
-# ============================================================================
 
 class ShapeCollection(Iterable):
     """Collection für Shape-Objekte"""
@@ -284,18 +266,14 @@ class ShapeCollection(Iterable):
     def __repr__(self) -> str:
         return f"ShapeCollection({len(self._shapes)} shapes)"
 
-# ============================================================================
 # Teil E: Hauptprogramm
-# ============================================================================
-
 def main():
     print("="*60)
     print("GEOMETRIE-BIBLIOTHEK - DEMONSTRATION")
     print("="*60)
-    
-    # ========================================================================
+   
     # Teil A & B: Shapes erstellen und Polymorphie demonstrieren
-    # ========================================================================
+
     print("\n" + "="*60)
     print("TEIL A & B: Shapes und Polymorphie")
     print("="*60)
@@ -313,10 +291,9 @@ def main():
     # Flächenvergleich
     print_area_comparison(rect1, circle1)
     print_area_comparison(circle1, triangle1)
-    
-    # ========================================================================
+  
     # Teil C: Klassenmethoden
-    # ========================================================================
+
     print("\n" + "="*60)
     print("TEIL C: Klassenmethoden")
     print("="*60)
@@ -349,10 +326,9 @@ def main():
     print_shape_info(rect4)
     print_shape_info(circle5)
     print_shape_info(triangle4)
-    
-    # ========================================================================
+
     # Teil D: Statische Methoden
-    # ========================================================================
+
     print("\n" + "="*60)
     print("TEIL D: Statische Methoden")
     print("="*60)
@@ -381,10 +357,9 @@ def main():
         error = abs(math.pi - approx)
         print(f" n={n:5d}: {approx:.10f} (Fehler: {error:.2e})")
     print(f" exakter Wert: {math.pi:.10f}")
-    
-    # ========================================================================
+  
     # Zusätzliche Herausforderung: ShapeCollection
-    # ========================================================================
+   
     print("\n" + "="*60)
     print("ZUSÄTZLICHE HERAUSFORDERUNG: ShapeCollection")
     print("="*60)
@@ -423,9 +398,7 @@ def main():
     print("DEMONSTRATION ABGESCHLOSSEN")
     print("="*60)
 
-# ============================================================================
 # Zusätzliche Test-Hilfsfunktion
-# ============================================================================
 
 def test_duck_typing():
     """
